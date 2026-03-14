@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Podaj liczby: ");
+        Console.WriteLine("Podaj liczby, oddzielone spacja: ");
         string input = Console.ReadLine();
 
         if (string.IsNullOrEmpty(input))
@@ -20,6 +20,25 @@ class Program
         for (int i = 0; i < numbers.Length; i++)
         {
             numbers[i] = int.Parse(inputs[i]);
+        }
+        
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            if (i == 0)
+            {
+                Console.Write("[");
+            }  
+            
+            Console.Write(numbers[i]);
+            
+            if (i < numbers.Length - 1)
+            {
+                Console.Write(", ");
+            }
+            else
+            {
+                Console.Write("]");                
+            }
         }
     }
 }
