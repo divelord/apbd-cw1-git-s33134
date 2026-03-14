@@ -41,4 +41,16 @@ class Program
             }
         }
     }
+
+    static double CalculateAverage(int[] numbers)
+    {
+        double sum = 0.0;
+
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            sum += numbers[i];
+        }
+        
+        return sum / numbers.Length;
+    }
 }
