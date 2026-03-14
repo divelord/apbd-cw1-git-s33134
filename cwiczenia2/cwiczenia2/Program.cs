@@ -40,6 +40,10 @@ class Program
                 Console.Write("]");                
             }
         }
+        Console.WriteLine();
+        
+        double average = CalculateAverage(numbers);
+        Console.WriteLine("Srednia: " + average);
     }
 
     static double CalculateAverage(int[] numbers)
