@@ -42,8 +42,13 @@ class Program
         }
         Console.WriteLine();
         
+        Console.WriteLine("");
         double average = CalculateAverage(numbers);
         Console.WriteLine("Srednia: " + average);
+        
+        Console.WriteLine("");
+        int max = CalculateMax(numbers);
+        Console.WriteLine("Max: " + max);
     }
 
     static double CalculateAverage(int[] numbers)
@@ -56,5 +61,20 @@ class Program
         }
         
         return sum / numbers.Length;
+    }
+
+    static int CalculateMax(int[] numbers)
+    {
+        int max = numbers[0];
+
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            if (numbers[i] > max)
+            {
+                max = numbers[i];
+            }
+        }
+        
+        return max;
     }
 }
