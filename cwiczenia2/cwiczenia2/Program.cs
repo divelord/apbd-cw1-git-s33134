@@ -4,6 +4,8 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Hello, World!");
+        Console.WriteLine("Podaj liczby: ");
+        string input = Console.ReadLine();
+        string[] numbers = input.Split(' ');
     }
 }
