@@ -13,6 +13,13 @@ class Program
             return;
         }
         
-        string[] numbers = input.Split(' ');
+        string[] inputs = input.Split(" ");
+        
+        int[] numbers = new int[inputs.Length];
+        
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            numbers[i] = int.Parse(inputs[i]);
+        }
     }
 }
