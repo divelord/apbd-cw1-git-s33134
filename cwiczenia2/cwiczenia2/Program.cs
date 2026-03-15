@@ -4,6 +4,8 @@ class Program
 {
     static void Main()
     {
+        Console.WriteLine("Prosty program obliczeniowy\n");
+        
         Console.WriteLine("Podaj liczby, oddzielone spacja: ");
         string input = Console.ReadLine();
 
