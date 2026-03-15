@@ -4,10 +4,16 @@ Repozytorium zawiera zadania wykonane na ćwiczeniach z przedmiotu APBD
 
 ## Odpowiedzi do pytań
 
-### Zadanie 5
+_Kiedy Git wykona fast-forward, a kiedy powstaje merge commit?_
 
-Merge nie był fast-forward, ponieważ przed wykonaniem merge, na gałęzi main powstał nowy commit, co spowodowało utworzenie nowego commit'a, który opisuje scalenie dwóch gałęzi.
+Git wykona fast-forward, gdy wykonamy merge gałęzi x na main'a, który nie ma nowych commit'ów.  
+Natomiast merge commit powstanie, gdy przed wykonaniem merge'a, powstanie nowy commit na main.
 
-### Zadanie 6
+_Czym w praktyce różni się merge od rebase?_
 
-Po merge, commit'y na gałęzi są unikatowe dla tej gałęzi. Natomiast używając rebase, po mergu commit'y z gałęzi przechodzą na commity na główną gałęź. 
+Używając merge, commit'y gałęzi x są unikatowe dla tej gałęzi, a marge gałęzi tworzy tylko nowego commit'a (chyba, że był fast-forward to nie będzie merge commit).  
+Natomiast używając rebase, commit'y z gałęzi x są kopiowane i przechodzą na główną gałęź. 
+
+*W jaki sposób został rozwiązany konflikt w Twoim repozytorium?*
+
+Poprzez kliknicie w "Resolve conflicts" sprawdziłem, która wersja kodu wg mnie jest bardziej przejrzysta i wybrałem czytelniejszą, upewniając się, że kod będzie działał poprawnie.
