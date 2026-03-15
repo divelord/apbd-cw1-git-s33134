@@ -16,7 +16,6 @@ class Program
         }
         
         string[] inputs = input.Split(" ");
-        
         int[] numbers = new int[inputs.Length];
         
         for (int i = 0; i < numbers.Length; i++)
@@ -44,15 +43,12 @@ class Program
         }
         Console.WriteLine();
         
-        Console.WriteLine();
         double average = CalculateAverage(numbers);
         Console.WriteLine("Srednia: " + average);
         
-        Console.WriteLine();
         int max = CalculateMax(numbers);
         Console.WriteLine("Max: " + max);
         
-        Console.WriteLine();
         int min = CalculateMin(numbers);
         Console.WriteLine("Min: " + min);
     }
