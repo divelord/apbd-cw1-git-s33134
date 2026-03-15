@@ -77,4 +77,9 @@ class Program
         
         return max;
     }
+
+    static int CalculateMin(int[] numbers)
+    {
+        
+    }
 }
