@@ -4,6 +4,8 @@ class Program
 {
     static void Main()
     {
+        Console.WriteLine("Program obliczeniowy\n");
+
         Console.WriteLine("Podaj liczby, oddzielone spacja: ");
         string input = Console.ReadLine();
 
@@ -42,15 +44,12 @@ class Program
         }
         Console.WriteLine();
         
-        Console.WriteLine();
         double average = CalculateAverage(numbers);
         Console.WriteLine("Srednia: " + average);
         
-        Console.WriteLine();
         int max = CalculateMax(numbers);
         Console.WriteLine("Max: " + max);
         
-        Console.WriteLine();
         int min = CalculateMin(numbers);
         Console.WriteLine("Min: " + min);
     }
